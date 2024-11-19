@@ -1,7 +1,7 @@
-# Milestone-2
+# Microservice for Pokemon card collecting
 Random Card Generator Microservice This microservice provides an API to fetch random card details for use in various parts of the PokeCC application. It integrates with other parts of the app (e.g., Login and Reset Password pages) to dynamically display random cards.
 
-Communication Contract
+# Communication Contract
 
 1. Requesting Data from the Microservice
 To programmatically request data from the Random Card Generator microservice, send a GET request to the following endpoint:
