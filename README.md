@@ -12,7 +12,7 @@ Headers: None.
 
 2. Example API Request
 Here’s an example of how to make the request using Python:
-
+```
 import requests
 
 url = "http://127.0.0.1:5020/api/random-cards"
@@ -26,10 +26,11 @@ try:
         print("Failed to fetch cards. Status Code:", response.status_code)
 except requests.exceptions.RequestException as e:
     print("Error while connecting to the microservice:", str(e))
+```
 
 3. Example API Response
 The microservice will return a JSON response containing 5 random cards. Each card includes the following fields:
-
+```
 name: The name of the card.
 image_url: The URL to the card's image.
 Example JSON Response:
@@ -57,18 +58,18 @@ Example JSON Response:
     }
   ]
 }
-
+```
 
 4. How to Programmatically Receive and Use Data Once you receive the JSON response, iterate through the cards array to access each card’s name and image_url. 
 Here’s an example:
-
+```
 response = requests.get("http://127.0.0.1:5020/api/random-cards")
 if response.status_code == 200:
     random_cards = response.json().get("cards", [])
     for card in random_cards:
         print(f"Card Name: {card['name']}")
         print(f"Image URL: {card['image_url']}")
-
+```
 
 ![image](https://github.com/user-attachments/assets/242274d2-c030-42d8-a71a-401369048701)
 
