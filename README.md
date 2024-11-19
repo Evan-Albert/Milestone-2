@@ -70,6 +70,7 @@ if response.status_code == 200:
         print(f"Image URL: {card['image_url']}")
 
 
+![image](https://github.com/user-attachments/assets/242274d2-c030-42d8-a71a-401369048701)
 
 
 
